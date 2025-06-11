@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import joblib
+from sklearn.preprocessing import StandardScaler
 
 # Load model dan alat bantu
 # === Load model dan data training ===
