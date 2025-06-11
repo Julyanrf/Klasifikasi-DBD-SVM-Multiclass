@@ -8,7 +8,6 @@ from sklearn.preprocessing import StandardScaler
 # === Load model dan data training ===
 model = joblib.load('model_svm.pkl')
 df_final = joblib.load('df_final.pkl')
-fit_columns=joblib.load('fit_columns.pkl')
 
 st.title("=== INPUT DATA PASIEN ===")
 
