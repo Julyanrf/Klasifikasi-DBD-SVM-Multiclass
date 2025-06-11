@@ -4,10 +4,14 @@ import pickle
 import joblib
 from sklearn.preprocessing import StandardScaler
 
+
 # Load model dan alat bantu
-# === Load model dan data training ===
-model = joblib.load('model_svm.pkl')
-df_final = joblib.load('df_final.pkl')
+with open('model_svm.pkl', 'rb') as f:
+    model = pickle.load(f)
+with open('scaler.pkl', 'rb') as f:
+    scaler = pickle.load(f)
+with open('fit_columns.pkl', 'rb') as f:
+    fit_columns = pickle.load(f)
 
 st.title("=== INPUT DATA PASIEN ===")
 
